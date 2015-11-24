@@ -4,15 +4,15 @@
 
 
 ## Setup
-    clone the repo [here](https://github.com/andela-amaborukoje/Angular_Boilerplate_Jade_Stylus)
-    run `npm install `
+    clone the repo [https://github.com/andela-amaborukoje/Angular_Boilerplate_Jade_Stylus](here)
+    run npm install
 
 
 ## Build
-    `npm run build`
+    npm run build
 
 ## Run
-    `npm start`
+    npm start
 
 Open your browser at [http://localhost:3000](http://localhost:3000)
 
@@ -20,6 +20,6 @@ Open your browser at [http://localhost:3000](http://localhost:3000)
 
 Run the watch script when developing
 
-    you can run `npm run watch`
+    you can run npm run watch
 
 Happy Usage.....
