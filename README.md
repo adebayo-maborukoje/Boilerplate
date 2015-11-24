@@ -19,8 +19,8 @@ Open your browser at [http://localhost:3000](http://localhost:3000)
 
 ## During Development
 
-Run the watch script when developing
-you can run
+Run the watch script when developing: you can run
+
      npm run watch or gulp watch
 
 Happy Usage.....
