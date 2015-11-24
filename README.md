@@ -4,7 +4,7 @@
 
 
 ## Setup
-clone the repo  [git@github.com:andela-amaborukoje/Boilerplate.git](here)
+clone the repo  [here](git@github.com:andela-amaborukoje/Boilerplate.git)
 
     run npm install
 
