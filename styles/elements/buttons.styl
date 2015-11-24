@@ -1,0 +1,131 @@
+button-color(bg-color = color-primary, type-color = color-white)
+    background bg-color
+    color type-color
+
+    &:hover
+        background lighten(bg-color, 5)
+        color lighten(type-color, 10)
+
+    &.active, &:active
+        background lighten(bg-color, 20)
+        color mix(type-color, bg-color, 70)
+
+button, a, input[type='file']
+    &:hover
+        cursor pointer
+
+
+button, a.button, input[type='submit'], input[type='reset']
+    border-radius()
+    font-family font-body
+    display inline-block
+    padding 10px 25px
+    font-size 14px
+    text-transform uppercase
+    font-weight bold
+    margin-right 10px
+    smooth-font()
+
+    &:last-child
+        margin-right 0
+
+    &, &.button-default
+        button-color(color-primary)
+        border 0
+
+    &.button-info
+        button-color(color-blue)
+
+    &.button-success
+        button-color(color-green)
+
+    &.button-inverse
+        button-color(color-white, darken(color-primary, 40%))
+
+    &.button-inverse-success
+        button-color(color-white, darken(color-success, 40%))
+
+    &.button-editor
+        button-color(lighten(color-editor-bg, 10))
+    
+    &.button-facebook
+        button-color(#31488b)
+        
+    &.button-twitter
+        button-color(#55acee)
+        
+    &.button-facebook, &.button-twitter, &.button-email
+        padding 10px !important
+        img
+            width 20px
+            height 20px
+            border-radius(0)
+            background none
+    
+    &.button-email
+        button-color(color-green)
+
+    &.large
+        padding 13px 30px
+        font-size 17px
+
+    &.button-icon
+        width 40px
+        height @width
+        line-height @width
+        text-align center
+        padding 0
+
+        i
+            left 0
+
+    &.workspace-action-button
+        position relative
+        color darken(color-grey-mid, 5)
+        background transparent
+        padding-right 10px
+
+        &:before
+            position absolute
+            left 0
+            content ' '
+            height 20px
+            width 20px
+
+        &.save:before
+            background url(../assets/button-icons/down.png) no-repeat
+
+        &.share:before
+            background url(../assets/button-icons/share.png) no-repeat
+
+        &.load:before
+            background url(../assets/button-icons/down.png) no-repeat
+
+        &.reset:before
+            background url(../assets/button-icons/reset.png) no-repeat
+
+    &.help
+        position absolute
+        top 10px
+        right 0
+        color color-white
+        background darken(color-grey-mid, 14)
+        font-weight bold
+        width 44px
+        height 44px
+        line-height 44px
+        font-size 24px
+        padding 0
+        margin 0
+        text-align center
+
+        &:hover
+            background darken(color-grey-mid, 10)
+
+    i
+        position relative
+        left -7px
+        opacity .6
+
+    &.disabled 
+        opacity 0.3

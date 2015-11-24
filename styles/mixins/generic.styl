@@ -1,0 +1,125 @@
+page-width()
+    width 1020px
+    padding-top 20px
+    margin-left auto
+    margin-right auto
+
+absolute-cover()
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+
+border-radius(radius = 3px)
+    border-radius radius
+
+bg-inverse(bg-color = color-primary)
+    background color-blue
+    color color-white
+
+    h1, h2, h3, h4, h5, h6
+        text-shadow 0 2px rgba(#000, .07)
+        color color-black
+
+        &.ruled
+            border-bottom 1px solid color-ruler-inverse
+
+    hr
+        background color-ruler-inverse
+
+    code
+        background rgba(#fff, .7)
+        color darken(color-primary, 40%)
+
+debullet()
+    list-style none
+    padding-left 0
+
+    li
+        margin-left 0
+
+blur-fx(amt = 5px)
+    -webkit-filter blur(amt)
+
+smooth-font(state = true)
+    if state == false
+        font-smoothing: subpixel-antialiased
+        -moz-osx-font-smoothing: auto
+    else
+        font-smoothing: antialiased
+        -moz-osx-font-smoothing: grayscale
+
+circle(size = 10px, color = color-grey-lighter)
+    width size
+    height size
+    border-radius size
+    line-height size
+    text-align center
+    background-color color
+    display inline-block
+
+no-select()
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+filter(value)
+    -webkit-filter value
+    filter value
+
+header-text(font-size)
+    margin 0
+    font-size font-size
+    font-weight bold
+    font-smoothing antialiased
+
+absolute-position(t-value, r-value, b-value, l-value)
+    position absolute
+    top t-value
+    right r-value
+    bottom b-value
+    left l-value
+    
+banner(bgcolor, a_color)
+    width 100%
+    text-align center
+    background-color bgcolor
+    padding 7px 0
+    font-size 90%
+    font-weight 400
+
+    a
+        color a_color
+        position relative
+        font-size 17.5px
+        text-transform: none
+        
+        &:hover
+            text-decoration underline
+        
+        img
+            position absolute
+            width 55px
+            top 0
+            margin-top -17.5px
+            left -75px
+            -webkit-transform rotate(-12deg)
+            -moz-transform rotate(-12deg)
+            -o-transform rotate(-12deg)
+            -ms-transform rotate(-12deg)
+            transform rotate(-12deg)
+        
+        span
+            font-weight 600
+            font-smoothing: antialiased
+    
+    .modal-inner
+        top 150px
+        .cover
+            bg-image('challenges/images/world_covers/pixelhack', false, false, no-repeat)
+            min-height 200px
+            

@@ -1,0 +1,119 @@
+header
+    clearfix()
+    background color-black
+    padding-bottom 20px
+    text-align center
+    position relative
+
+    a.logo
+        // illustration-fit-height 'layout/draw-logo', header-height
+        margin auto
+        display inline-block
+        float left
+        margin-top 5px
+        margin-right 10px
+        text-decoration line-through
+
+
+    ul.nav
+        debullet()
+        float right
+        margin 2px
+        font-size 16px
+
+        &.nav-left
+            float left
+
+        &.nav-right
+            float right
+
+        li
+            margin 0 15px
+            float left
+
+            &.coming-soon
+                position relative
+
+                a
+                    opacity 1
+                    color darken(color-grey-darker, 0.2)
+
+                    div
+                        background-color color-primary
+                        position absolute
+                        top 5px
+                        left 35px
+                        color #fff
+                        transform rotate(-15deg)
+                        font-size 0.65em
+                        font-weight bold
+                        line-height 0
+                        padding 8px 10px
+                        border-radius(5px)
+
+            &:first-child
+                margin-left 0
+
+            &:last-child
+                margin-right 0
+
+            a
+                smooth-font()
+                color color-white
+                line-height header-height
+                text-transform uppercase
+                font-weight bold
+                position relative
+                top -2px
+                opacity 0.5
+
+                &:hover
+                    opacity .7
+
+                &.active
+                    opacity 1
+
+            i
+                opacity .5
+                font-size 18px
+                margin-right 5px
+                position relative
+                top 2px
+
+            button.close
+                background color-red
+                width 25px
+                height @width
+                line-height @width
+                padding 0
+                margin-top 5px
+
+                i
+                    font-size 9px
+                    opacity 1
+                    margin 0
+                    position static
+
+                &:hover
+                    background lighten(color-red, 5)
+
+        a.user-display
+            color color-white
+            margin-top 0
+            display block
+            position relative
+            margin-top 2px
+            opacity 1
+
+            .avatar
+                width 35px
+                height @width
+                border-radius @width
+                overflow hidden
+                display inline-block
+                margin -10px 10px
+
+                img
+                    width @width + 2px
+                    height @width
+                    margin -1px

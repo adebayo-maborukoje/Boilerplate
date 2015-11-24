@@ -1,0 +1,52 @@
+{
+  "name": "Boilerplate",
+  "version": "0.1.0",
+  "description": "An Angular Js BoilerPlate loaded with Live reload and well structured folder. ** with support for Jade and Stylus for Html and css preprocessing...",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server/index.js",
+    "watch": "gulp watch",
+    "build": "gulp",
+    "bundle": "./bundle",
+    "postinstall": "node node_modules/.bin/gulp default",
+    "jshint": "jshint lib",
+    "jscs": "jscs lib",
+    "test": "./node_modules/.bin/mocha test/**/*"
+  },
+  "author": "Adebayo Maborukoje ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andela-amaborukoje/Angular_Boilerplate_Jade_Stylus"
+  },
+  "license": "MIT2",
+  "dependencies": {
+    "api-service": "1.0.0",
+    "cli-color": "~0.2.x",
+
+    "color": "^0.7.3",
+    "deep-equal": "^1.0.0",
+    "express": "^4.10.5",
+    "griddy": "0.0.x",
+    "gulp": "~3.8.x",
+    "gulp-browserify": "~0.4.x",
+    "gulp-callback": "0.0.3",
+    "gulp-jade": "~0.4.x",
+    "gulp-livereload": "1.2.0",
+    "gulp-rename": "~0.2.x",
+    "gulp-stylus": "^2.0.1",
+    "http-server": "~0.6.x",
+    "lodash": "~2.4.x",
+    "marked": "~0.3.x",
+    "moment": "^2.10.6",
+    "nib": "~1.0.x",
+    "partialify": "^3.1.1",
+    "tiny-lr": "0.0.9"
+  },
+  "devDependencies": {
+    "mocha": "2.3.x",
+    "chai": "3.2.x"
+  },
+  "engines": {
+    "node": "0.12.x"
+  }
+}
